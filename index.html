@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-<html>  
-<head>  
-<link rel= "stylesheet" href= "style/style.css">
+
+<html><head> 
+<link rel="stylesheet" href="style.css">
 <title>Details of user</title>  
 </head> 
 
 <body>
 
-<div class = "main1">
-        <div class= "header1">
+<div class="main1">
+        <div class="header1">
 
                <h1><center>USER DETAILS</center></h1>
         </div><br>
 
-    <div class = "pager1">
+    <div class="pager1">
 
-	<div class = "header2">
+	<div class="header2">
 	<center>
-	<form action = "connect.php" method = "post">
-	<input type="text" placeholder="Search by email/phone" name="search">
-	<input type= "submit" value= "Search">
+	<form action="search.php" method="post">
 	
-	</center>
+	<input type="text"  name="search" placeholder="search by email"/>
+	<button>search</button>
+	
+	</form></center>
 	</div>
 
  <center>
 	<h2>Provide details below</h2>
 	
-	
-Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="" name = "name"><br><br>
-Email id : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" value="" name = "email"><br><br>
-Contact Number:&nbsp;&nbsp;<input type="tel" value="" name ="phone" maxlength=10 ><br><br><br><br>
+<form action="connect.php" method="post">
+Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="" name="name"><br><br>
+Email id : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" value="" name="email"><br><br>
+Contact Number:&nbsp;&nbsp;<input type="tel" value="" name="phone" maxlength="10"><br><br><br><br>
 
-<input type= "submit" value= "submit">
+<input type="submit" value="submit">
 </form>
+
 
 </center>
 </div>
 </div>
-</body>  
-</html>
+  
+
+</body></html>
