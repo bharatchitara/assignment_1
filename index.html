@@ -1,42 +1,46 @@
-<!DOCTYPE html>
-<html>  
-<head>  
-<link rel= "stylesheet" href= "style/style.css">
+
+<html>
+<head> 
+<link rel="stylesheet" href="style.css">
+
 <title>Details of user</title>  
 </head> 
 
 <body>
-
-<div class = "main1">
-        <div class= "header1">
+<div class="main1">
+        <div class="header1">
 
                <h1><center>USER DETAILS</center></h1>
         </div><br>
 
-    <div class = "pager1">
+    <div class="pager1">
 
-	<div class = "header2">
+	<div class="header2">
 	<center>
-	<form action = "connect.php" method = "post">
-	<input type="text" placeholder="Search by email/phone" name="search">
-	<input type= "submit" value= "Search">
+	<form name= "searching" action="search.php" method="post" autocomplete="off">
 	
-	</center>
+	<input type="email" name="search" placeholder="search by email" maxlength = "40" required />
+	<button>search</button>
+	
+	</form></center>
 	</div>
 
  <center>
 	<h2>Provide details below</h2>
-	
-	
-Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="" name = "name"><br><br>
-Email id : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" value="" name = "email"><br><br>
-Contact Number:&nbsp;&nbsp;<input type="tel" value="" name ="phone" maxlength=10 ><br><br><br><br>
 
-<input type= "submit" value= "submit">
+<form name = "insertion" action="connect.php" method="post" autocomplete="off" >
+
+Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="" name="name" placeholder="example" maxlength="40" required ><br><br>
+Email id : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" value="" name="email" maxlength="40" placeholder = "example@domain.com" oninvalid="setCustomValidity('Please enter only spcific format: example@domain.com')" required ><br><br>
+Mobile Number:&nbsp;&nbsp;+91<input type="tel" value="" name="phone" maxlength="10" pattern= "[6-9]{1}[0-9]{9}" placeholder="9610384007" oninvalid="setCustomValidity('Please enter only numerical digits or acc. to indian standards.')" required > <br><br><br><br>
+
+<button>Submit</button>
 </form>
+
 
 </center>
 </div>
 </div>
-</body>  
-</html>
+  
+
+</body></html>
